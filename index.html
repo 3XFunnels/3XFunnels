@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Robles - Transforma tu Instagram en Clientes High-Ticket</title>
+    <style>
+        /* --- Estilos CSS Básicos --- */
+        body {
+            font-family: 'Arial', sans-serif; /* Reemplazar con la fuente de Tobias */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee; /* Separador visual */
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h1, h2, h3 {
+            color: #1a2a4a; /* Azul oscuro - Ajustar al branding */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6f61; /* Color llamativo - Ajustar al branding */
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: #e65a50; /* Oscurecer al pasar el mouse */
+        }
+
+        .primary-cta {
+            font-size: 1.3em;
+            padding: 18px 35px;
+        }
+
+        .secondary-cta {
+             background-color: #4a90e2; /* Azul - Ajustar */
+        }
+        .secondary-cta:hover {
+             background-color: #3a7ac1;
+        }
+
+        .hero-section {
+            background-color: #f8f9fa; /* Fondo suave */
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         .hero-section .social-proof-hint {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* Placeholder para imagen/video */
+        .visual-placeholder {
+            background-color: #e0e0e0;
+            width: 100%;
+            height: 300px; /* Ajustar tamaño */
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-style: italic;
+            border-radius: 8px;
+        }
+
+        .benefit-item, .step-item, .faq-item {
+            margin-bottom: 30px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .testimonial-card .visual-placeholder { height: 150px; margin-bottom: 15px;}
+        .testimonial-card blockquote {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .testimonial-card cite {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #1a2a4a;
+        }
+        .about-image {
+           width: 250px;       /* Ancho deseado */
+           height: 250px;      /* Alto deseado */
+           border-radius: 50%; /* Para hacerla redonda */
+           object-fit: cover;  /* Asegura que la imagen cubra el espacio sin deformarse */
+           display: block;     /* Buena práctica para imágenes */
+           flex-shrink: 0;     /* Importante para el layout flex */
+           margin-right: 40px; /* Espacio entre la imagen y el texto (en escritorio) */
+    /* Quita el margen automático si no lo necesitas aquí */
+        }
+        .about-image {
+          width: 200px;        /* Tamaño más pequeño para móviles */
+          height: 200px;
+          margin-right: 0;     /* Quita el margen derecho en móviles */
+          margin-bottom: 20px; /* Añade espacio debajo de la imagen en móviles */
+          margin-left: auto;   /* Centra la imagen si es necesario */
+          margin-right: auto;  /* Centra la imagen si es necesario */
+        } 
+
+        #sobre-tobias .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+         #sobre-tobias .visual-placeholder {
+            flex-shrink: 0;
+            width: 250px; /* Ajustar */
+            height: 250px;
+            border-radius: 50%; /* Foto redonda */
+         }
+         @media (max-width: 768px) {}
+    #sobre-tobias .container {
+        flex-direction: column; /* Apila imagen y texto en móviles */
+        text-align: center;     /* Centra el texto en móviles */
+    }
+
+        #cta-final {
+            background-color: #1a2a4a; /* Fondo oscuro para destacar */
+            color: #fff;
+            text-align: center;
+        }
+        #cta-final h2, #cta-final p {
+            color: #fff;
+        }
+        #cta-final .guarantee {
+            font-size: 0.9em;
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+
+        #lead-magnet {
+             background-color: #eaf2f8; /* Fondo suave diferente */
+             text-align: center;
+        }
+        #lead-magnet form {
+            margin-top: 20px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         #lead-magnet input[type="text"],
+         #lead-magnet input[type="email"] {
+            width: calc(100% - 22px); /* Ajuste padding */
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+         }
+
+        .faq-question {
+            font-weight: bold;
+            color: #4a90e2; /* Color pregunta */
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        footer .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        footer .footer-links li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        footer .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        footer .footer-links a:hover {
+            color: #fff;
+        }
+         footer .social-icons a {
+             margin: 0 10px;
+             color: #ccc;
+             font-size: 1.5em; /* Asumiendo uso de font icons */
+             text-decoration: none;
+         }
+         footer .social-icons a:hover {
+              color: #fff;
+         }
+
+        /* --- Media Query Básica para Móviles --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.8em; }
+
+            #sobre-tobias .container {
+                flex-direction: column;
+                text-align: center;
+            }
+             #sobre-tobias .visual-placeholder {
+                 margin-bottom: 20px;
+                 width: 200px;
+                 height: 200px;
+             }
+
+            .testimonial-grid {
+                 grid-template-columns: 1fr; /* Apilar testimonios */
+            }
+        }
+
+    </style>
+    </head>
+<body>
+
+    <header class="hero-section" id="hero">
+        <div class="container">
+          <img src="Captura de pantalla 2025-04-18 120416.png" alt="Foto de Tobias Robles" class="about-image">
+
+            <h1>Transforma tu Instagram en tu Principal Fuente de Clientes de 1000USD.</h1>
+            <p class="subtitle">Aprende el método paso a paso para construir una marca influyente, Convertir a tus clientes ideales y Vender tus servicios de alto valor continuamente usando Instagram.</p>
+            <a href="#cta-final" class="cta-button primary-cta">Agenda tu Sesión Estratégica Gratuita</a>
+             <p class="social-proof-hint">Confían en mí +50 Coaches y Expertos</p>
+        </div>
+    </header>
+
+    <section id="problema">
+        <div class="container">
+            <h2>¿Te esta pasando?</h2>
+            <ul>
+                <li>✔️ Publicas contenido valioso... pero la interacción es baja y nadie te compra.</li>
+                <li>✔️ Atraes seguidores... pero no son los clientes que realmente quieres (o pueden pagar tus precios).</li>
+                <li>✔️ Sientes que el algoritmo te controla y te agota intentar seguirle el ritmo.</li>
+                <li>✔️ Ves a otros tener éxito y no entiendes qué te falta a ti.</li>
+                <li>✔️ Inviertes horas en Instagram... sin ver resultados claros en facturación.</li>
+                <li>✔️ Te da inseguridad vender tus servicios de alto valor en la plataforma.</li>
+            </ul>
+            <p style="text-align: center; font-weight: bold;">No tienes por qué seguir así. Existe una forma más inteligente de usar Instagram para tu negocio.</p>
+        </div>
+    </section>
+
+    <section id="solucion" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>La Solución: Un Sistema Probado para Convertir tu Instagram en una Máquina de Clientes</h2>
+            <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 40px;">
+                 <div class="visual-placeholder" style="width: 150px; height: 150px; border-radius: 50%; flex-shrink: 0;">Foto Tobias</div>
+                 <p>Soy <strong>Tobias Robles</strong>, y ayudo a coaches, consultores y expertos como tú a dejar de ser esclavos del contenido y a construir un negocio rentable y una marca personal potente en Instagram. Mi enfoque no se basa en trucos pasajeros, sino en una estrategia integral que combina marca personal auténtica, contenido estratégico y sistemas de venta efectivos para atraer clientes high-ticket.</p>
+            </div>
+
+            <h3>Beneficios Clave del Método:</h3>
+            <div class="benefit-item"> <h4>🎯 Claridad Absoluta</h4>
+                <p>Define tu nicho, cliente ideal y mensaje irresistible para destacar.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>✍️ Contenido que Convierte</h4>
+                <p>Crea publicaciones y Reels que atraigan y cualifiquen prospectos, no solo likes.</p>
+            </div>
+            <div class="benefit-item">
+                <h4>📈 Sistema Predecible</h4>
+                <p>Implementa un flujo constante de leads y conversaciones de venta sin perseguir clientes.</p>
+            </div>
+             <div class="benefit-item">
+                <h4>💰 Monetización Efectiva</h4>
+                <p>Vende tus servicios high-ticket con confianza y estrategia, posicionándote como premium.</p>
+            </div>
+             <div class="benefit-item">
+                <h4>✨ Marca Personal Magnética</h4>
+                <p>Posiciónate como el experto referente en tu sector y atrae oportunidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pruebas">
+        <div class="container">
+            <h2>Lo Que Dicen Coaches y Expertos Que Ya Lo Han Logrado</h2>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <div class="visual-placeholder">Placeholder: Video Testimonio 1</div>
+                    <blockquote>"Desde que trabajo con Tobias, pasé de facturar X a Y en solo 3 meses. ¡Y todo gracias a Instagram! Su estrategia es oro puro."</blockquote>
+                    <cite>Nombre Apellido - Coach de Negocios</cite>
+                </article>
+                <article class="testimonial-card">
+                    <div class="visual-placeholder" style="height: 80px; width: 80px; border-radius: 50%; margin: 0 auto 15px;">Foto Cliente 2</div>
+                    <blockquote>"Estaba perdida con Instagram, publicaba sin rumbo. Tobias me dio claridad y un plan paso a paso. ¡Ya cerré mis primeros 2 clientes high-ticket!"</blockquote>
+                    <cite>Otro Nombre - Consultora de Marketing</cite>
+                </article>
+                 <article class="testimonial-card">
+                    <div class="visual-placeholder">Placeholder: Video/Imagen Testimonio 3</div>
+                    <blockquote>"Lo mejor es el sistema predecible. Ya no siento la presión de 'tener que publicar'. Sé qué hacer y funciona."</blockquote>
+                    <cite>Tercer Nombre - Experto en Finanzas Personales</cite>
+                </article>
+            </div>
+        </div>
+    </section>
+
+     <section id="como-funciona" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2>Empezar a Convertir Clientes Premium es Más facil de lo que Crees</h2>
+             <ol>
+                 <li class="step-item">
+                     <strong>1. Agenda tu Sesión Estratégica Gratuita:</strong> Una llamada sin compromiso para analizar tu situación actual, tus metas y ver si realmente podemos ayudarte a alcanzarlas.
+                 </li>
+                 <li class="step-item">
+                     <strong>2. Diseñamos tu Plan Personalizado:</strong> Si decidimos trabajar juntos, crearemos la hoja de ruta exacta para tu marca y objetivos en Instagram, adaptada a tu negocio.
+                 </li>
+                 <li class="step-item">
+                    <strong>3. Implementación y Acompañamiento:</strong> Te guío paso a paso (con soporte continuo) para poner en marcha la estrategia y superar cualquier obstáculo.
+                 </li>
+                 <li class="step-item">
+                    <strong>4. Resultados Medibles:</strong> Verás cómo tu Instagram empieza a generar conversaciones de venta, clientes cualificados y un aumento en tu facturación.
+                 </li>
+             </ol>
+            <div style="text-align: center; margin-top: 30px;">
+                 <a href="#cta-final" class="cta-button secondary-cta">Agendar Mi Sesión Estratégica Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-tobias">
+        <div class="container">
+          <img src="Captura de pantalla 2025-04-18 120416.png" alt="Foto de Tobias Robles" class="about-image">
+            <div>
+                <h2>¿Por Qué Puedo Ayudarte?</h2>
+                <p>Entiendo perfectamente la frustración de invertir tiempo en Instagram sin ver resultados tangibles. Yo también estuve ahí, probando 'hacks' que no funcionaban a largo plazo.</p>
+                <p>Tras años de prueba, error e inversión, desarrollé un método que SÍ funciona para profesionales como tú. No se trata solo de redes sociales, se trata de construir un NEGOCIO sólido usando Instagram como tu aliado estratégico.</p>
+                <p><strong>Mi misión es simple:</strong> Empoderarte con las estrategias correctas para que dejes de sentirte invisible online, atraigas a los clientes que mereces y monetices tu valioso conocimiento, permitiéndote vivir del impacto que generas.</p>
+            </div>
+        </div>
+    </section>
+
+     <section id="cta-final">
+        <div class="container">
+            <h2>¿Listo/a Para Dejar de Jugar en Instagram y Empezar a Ganar?</h2>
+            <p>Tu próximo cliente high-ticket te está esperando. Deja de perder tiempo y empieza a implementar una estrategia que funciona.</p>
+            <p>Agenda tu sesión estratégica gratuita hoy mismo y descubre el plan exacto para atraer clientes premium y monetizar tu marca personal en Instagram en los próximos 90 días.</p>
+            <a href="#link-a-calendly-o-formulario" class="cta-button primary-cta" style="margin-top: 20px;">¡Sí, Quiero Agendar mi Sesión Estratégica!</a>
+            <p class="guarantee">La sesión es 100% gratuita y sin compromiso. Analizaremos tu caso y solo si vemos claramente que podemos ayudarte, te explicaremos cómo podríamos trabajar juntos.</p>
+        </div>
+    </section>
+
+    <section id="lead-magnet">
+        <div class="container">
+            <h2>¿Aún no estás listo/a para una sesión? Empieza por aquí:</h2>
+            <h3>Recurso Gratuito: La Checklist Definitiva para Optimizar tu Perfil de Instagram y Atraer Clientes</h3>
+            <p>Descarga gratis esta checklist práctica para asegurarte de que tu perfil está 100% optimizado para convertir visitantes en seguidores y seguidores en clientes potenciales.</p>
+            <form action="#tu-endpoint-de-suscripcion" method="post">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required><br>
+                <input type="email" name="email" placeholder="Tu Mejor Email" required><br>
+                <button type="submit" class="cta-button secondary-cta">Descargar Gratis Ahora</button>
+            </form>
+        </div>
+    </section>
+
+     <section id="faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h4 class="faq-question">¿Esto es para mí si estoy empezando en Instagram o tengo pocos seguidores?</h4>
+                <p class="faq-answer">¡Absolutamente! De hecho, es el mejor momento para implementar una estrategia sólida desde el principio. No necesitas miles de seguidores para atraer clientes high-ticket, necesitas los seguidores CORRECTOS y una estrategia para convertirlos. Te ayudamos a construir esa base.</p>
+            </div>
+             <div class="faq-item">
+                <h4 class="faq-question">¿Cuánto tiempo tendré que dedicarle?</h4>
+                <p class="faq-answer">Buscamos eficiencia, no más horas. Te enseñaremos a optimizar tu tiempo para enfocarte en las acciones que generan resultados. La implementación inicial requiere compromiso, pero el objetivo es crear un sistema sostenible, no añadir más trabajo a tu día.</p>
+            </div>
+             <div class="faq-item">
+                <h4 class="faq-question">¿Qué tipo de resultados puedo esperar?</h4>
+                <p class="faq-answer">Los resultados varían según tu punto de partida, nicho y compromiso. Nuestros clientes suelen ver un aumento significativo en leads cualificados, conversaciones de venta, confianza al vender y, por supuesto, cierre de clientes high-ticket en los primeros 90 días de implementación seria.</p>
+            </div>
+             <div class="faq-item">
+                <h4 class="faq-question">¿Cuál es la inversión para trabajar contigo?</h4>
+                <p class="faq-answer">Nuestros programas son una inversión premium diseñada para generar un retorno significativo. Discutimos los detalles específicos y opciones en la sesión estratégica gratuita, una vez que entendemos tus necesidades y confirmamos que somos el encaje adecuado para ayudarte a alcanzar tus metas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+             <div style="margin-bottom: 15px;">Logo Tobias Robles</div>
+             <ul class="footer-links">
+                <li><a href="#politica-privacidad">Política de Privacidad</a></li>
+                <li><a href="#terminos-condiciones">Términos y Condiciones</a></li>
+                 <li><a href="mailto:contacto@tobiasrobles.com">Contacto</a></li>
+            </ul>
+             <div class="social-icons">
+                 <a href="https://www.instagram.com/tobiasroblesss/" target="_blank" title="Instagram">📷</a>
+                 </div>
+            <p>&copy; <span id="current-year"></span> Tobias Robles. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Pequeño script para actualizar el año del copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
